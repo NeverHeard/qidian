@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>教育 - 同济大学用户体验实验室</title>
+		<meta http-equiv="keywords" content="uxlab,用户体验实验室,同济大学 用户体验实验室">
+		<meta http-equiv="description" content="同济大学用户体验实验室">
+		<link rel="shortcut icon" href="img/logo.ico">
+		<link rel="stylesheet" href="styles/themes/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" href="styles/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="styles/themes/mbl.css" />
+		<link rel="stylesheet" type="text/css" href="styles/mobile.css"/>
+	</head>
+	<body>
+		<header data-role="header" data-position="fixed">
+			<a data-rel="back" class="page-back ui-btn-icon-notext"><img src="img/ic_action_previous_item.png" /></a>
+			<!-- <a class="page-back ui-btn-icon-notext" href="javascript :;" onClick="javascript :history.back(-1);"><img src="img/ic_action_previous_item.png" border="0" title="返回上一页"></a> -->
+			<h1 class="header">教育<img src="img/header_arrow.png" /><img style="display: none;"  src="img/header_arrow_down.png" /></h1>
+			<a href="#panel" class="ui-btn-right ui-btn ui-btn-inline ui-icon-bullets page-menu"><img src="img/more.png" /></a>
+		</header>
+
+		<div id="chooseChannel">
+	        <ul data-role="listview" data-theme="a" class="ui-listview">
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li ">
+	            	<a href="#anchor1" rel="external" class="ui-link-inherit  ui-btn ui-btn-a">设计方法</a>
+	            </li>
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li">
+	            	<a href="#anchor2"  class="ui-link-inherit  ui-btn ui-btn-a">教育成果</a>
+	            </li>
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li">
+	            	<a href="#anchor3" rel="external" class="ui-link-inherit  ui-btn ui-btn-a">相关资源</a>
+	            </li>
+	        </ul>
+		</div>
+		<nav data-role="panel" id="panel" data-display="overlay" data-position="right" data-position-fixed="true">
+			<ul class="listview" data-role="listview" data-icon="false">
+				<li data-role="list-divider" class="logo"><a href="center_mobile.html" rel="external", data-ajax="false"><img src="img/mlogo.png" /></a></li>
+				<li><a href="center_mobile.html" rel="external", data-ajax="false">实验室</a></li>
+				<li><a href="design_mobile.html" rel="external", data-ajax="false">设计</a></li>
+				<li><a href="research_mobile.html" rel="external", data-ajax="false">研究</a></li>
+				<li class="menu-li-select"><a href="#" rel="external", data-ajax="false">教育</a></li>
+				<li><a href="news_mobile.html" rel="external", data-ajax="false">新闻</a></li>	
+				<!-- <li data-role="list-divider" class="pc_version"><a href="domain.html"  rel="external", data-ajax="false">电脑版</a></li>	 -->
+			</ul>
+		</nav>
+		
+		<div ng-app="uxlabApp" ng-controller="educationCtrl" class="container">
+			<div id="anchor1">
+				<div class="nav-title">
+					<span class="p1">01</span>
+					<span class="p2">设计方法</span>
+					<span class="p3">Design Method</span>
+				</div>
+				<div class="img_container center">
+					<img class="big_img" src="img/method1.png" />
+					<img class="big_img" src="img/method2.png" />
+				</div>				
+			</div>
+
+			<div id="anchor2">
+				<div class="nav-title">
+					<span class="p1">02</span>
+					<span class="p2">交互设计教育研究与服务</span>
+					<span class="p3">Interaction Design Education Product and Service</span>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">物理教学沙盘</span>
+					<span class="p6">Books</span>
+				</div>
+				<div class="item_container">
+					<div class="text_container">
+					</div>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">数字教学沙盘</span>
+					<span class="p6">Books</span>
+				</div>
+				<div class="item_container">
+					<div class="text_container">
+					</div>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">交互设计课程平台（web版）</span>
+					<span class="p6">Books</span>
+				</div>
+				<div class="item_container">
+					<div class="text_container">
+					</div>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">交互设计课程平台（手机版）</span>
+					<span class="p6">Books</span>
+				</div>
+				<div class="item_container">
+					<div class="text_container">
+					</div>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">交互设计网络工程训练系统</span>
+					<span class="p6">Books</span>
+				</div>
+				<div class="item_container">
+					<div class="text_container">
+					</div>
+				</div>
+			</div>
+
+			<div id="anchor3">
+				<div class="nav-title">
+					<span class="p1">03</span>
+					<span class="p2">相关资源</span>
+					<span class="p3">Related Resources</span>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">书</span>
+					<span class="p6">Books</span>
+				</div>
+				<div class="item_container">
+					<div class="text_container">
+						<table id="book_table" rules="all">
+						<thead>
+							<tr>
+								<th>正题名</th>
+								<th>编著者</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="book in books" ><td>{{book.name}}</td><td>{{book.authors}}</td></tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">会议</span>
+					<span class="p6">Conferences</span>
+				</div>
+				<div ng-repeat="meeting in meetings" class="float_container">
+					<div class="float_img">
+						<img src="http://fangmingdesign.net:8080{{meeting.cover}}"/>
+					</div>
+					<div>		
+						<h4>{{meeting.title}}</h4>	
+						<br>		
+						<p>
+							{{meeting.intro}}
+						</p>
+						<br>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">网络资源</span>
+					<span class="p6">Netword Resources</span>
+				</div>
+				<div class="item_container">
+					<div class="text_container">
+						<div class="resource" ng-repeat="resource in resources">
+							<a rel="external" href="http://{{resource.page}}">
+								<div>
+									<p>{{resource.title}}</p>
+									{{resource.page}}
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">研究机构</span>
+					<span class="p6">Research Institutes</span>
+				</div>
+				<div class="item_container">
+					<div class="text_container">
+						<div class="resource" ng-repeat="institute in institutes">
+							<a rel="external" href="http://{{institute.page}}">
+								<div>
+									<p>{{institute.title}}</p>
+									{{institute.page}}
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div>Copyright 同济大学艺术与传媒学院用户体验实验室 版权所有</div>
+		</footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>	
+		<script src="js/angular.min.js"></script>	
+		<script src="js/angular-sanitize.min.js"></script>
+		<script src="js/mobile.js"></script>
+	</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>设计 - 同济大学用户体验实验室</title>
+		<meta http-equiv="keywords" content="uxlab,用户体验实验室,同济大学 用户体验实验室">
+		<meta http-equiv="description" content="同济大学用户体验实验室">
+		<link rel="shortcut icon" href="img/logo.ico">
+		<link rel="stylesheet" href="styles/themes/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" href="styles/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="styles/themes/mbl.css" />
+		<link rel="stylesheet" type="text/css" href="styles/mobile.css"/>
+	</head>
+	<body>
+		<header data-role="header" data-position="fixed">
+			<a data-rel="back" class="page-back ui-btn-icon-notext"><img src="img/ic_action_previous_item.png" /></a>
+			<h1 class="header">设计<img src="img/header_arrow.png" /><img style="display: none;"  src="img/header_arrow_down.png" /></h1>
+			<a href="#panel" class="ui-btn-right ui-btn ui-btn-inline ui-icon-bullets page-menu"><img src="img/more.png" /></a>			
+		</header>
+		
+		<div id="chooseChannel">
+	        <ul data-role="listview" data-theme="a" class="ui-listview">
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li ">
+	            	<a href="#anchor1" rel="external" class="ui-link-inherit  ui-btn ui-btn-a">交互设计和品牌传播</a>
+	            </li>
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li">
+	            	<a href="#anchor2"  class="ui-link-inherit  ui-btn ui-btn-a">大数据与信息可视化设计</a>
+	            </li>
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li">
+	            	<a href="#anchor3" rel="external" class="ui-link-inherit  ui-btn ui-btn-a">虚拟交互与用户体验</a>
+	            </li>
+	        </ul>
+		</div>
+		<nav data-role="panel" id="panel" data-display="overlay" data-position="right" data-position-fixed="true">
+			<ul class="listview" data-role="listview" data-icon="false">
+				<li data-role="list-divider" class="logo"><a href="center_mobile.html" rel="external", data-ajax="false"><img src="img/mlogo.png" /></a></li>
+				<li><a href="center_mobile.html" rel="external", data-ajax="false">实验室</a></li>
+				<li class="menu-li-select"><a href="#" rel="external", data-ajax="false">设计</a></li>
+				<li><a href="research_mobile.html" rel="external", data-ajax="false">研究</a></li>
+				<li><a href="education_mobile.html" rel="external", data-ajax="false">教育</a></li>
+				<li><a href="news_mobile.html" rel="external", data-ajax="false">新闻</a></li>
+				<!-- <li data-role="list-divider" class="pc_version"><a href="design.html"  rel="external", data-ajax="false">电脑版</a></li> -->
+			</ul>
+		</nav>
+		
+		<div id="design_moudle" ng-app="uxlabApp" ng-controller="designCtrl" class="container">
+			<div id="anchor1">
+				<div class="nav-title">
+					<span class="p1">01</span>
+					<span class="p2">交互设计和品牌传播</span>
+					<span class="p3">Innovative products design</span>
+				</div>
+				<div ng-repeat="innovative in innovatives" class="item_container">
+					<div class="image_container center">
+						<!-- <img class="big_img" src="http://fangmingdesign.net:8080{{innovative.cover}}"/> -->
+						<img src="http://fangmingdesign.net:8080{{innovative.cover}}" class="big_img lazy">
+					</div>
+					<div  class="text_container">
+						<div class="project_name">
+							<span class="project_name_cn">{{innovative.name}} （{{innovative.start_date}}-{{innovative.end_date}}）</span>
+							<span class="project_name_en">{{innovative.name_en}}</span>
+						</div>
+						<p>
+							{{innovative.abstract}}
+						</p><br>
+						<div ng-show="innovative.design.length">
+							<div class="design_content_title">
+								设计方法
+							</div>
+							<ul class="project_table">
+								<li ng-repeat="a in innovative.design.split(',')" | filter1>
+									<p>{{design_content[a].name}} </p>
+									<p>{{design_content[a].name_en}}</p>
+								</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>	
+			
+			<div id="anchor2">
+				<div class="nav-title">
+					<span class="p1">02</span>
+					<span class="p2">大数据与信息可视化设计</span>
+					<span class="p3">Service design</span>
+				</div>
+				<div ng-repeat="service in services" class="item_container">
+					<div class="image_container center">
+						<img class="big_img" src="http://fangmingdesign.net:8080{{service.cover}}"/>
+					</div>
+					<div class="text_container">
+						<div class="project_name">
+							<span class="project_name_cn">{{service.name}} （{{service.start_date}}-{{service.end_date}}）</span>
+							<span class="project_name_en">{{service.name_en}}</span>
+						</div>
+						<p>
+							{{service.abstract}}
+						</p><br>
+						<div ng-show="service.design.length">
+							<div class="design_content_title">
+								设计方法
+							</div>
+							<ul class="project_table">
+								<li ng-repeat="a in service.design.split(',')">
+									<p>{{design_content[a].name}} </p>
+									<p>{{design_content[a].name_en}}</p>
+								</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+
+			<div id="anchor3">
+				<div class="nav-title">
+					<span class="p1">03</span>
+					<span class="p2">虚拟交互与用户体验</span>
+					<span class="p3">Interaction design</span>
+				</div>
+				<div ng-repeat="ui in uis" class="item_container">
+					<div class="image_container center">
+						<img class="big_img" src="http://fangmingdesign.net:8080{{ui.cover}}"/>
+					</div>
+					<div class="text_container">
+						<div class="project_name">
+							<span class="project_name_cn">{{ui.name}} （{{ui.start_date}}-{{ui.end_date}}）</span>
+							<span class="project_name_en">{{ui.name_en}}</span>
+						</div>
+						<p>
+							{{ui.abstract}}
+						</p><br>
+						<div ng-show="ui.design.length">
+							<div class="design_content_title">
+								设计方法
+							</div>
+							<ul class="project_table">
+								<li ng-repeat="a in ui.design.split(',')">
+									<p>{{design_content[a].name}} </p>
+									<p>{{design_content[a].name_en}}</p>
+								</li>
+								<div class="clear"></div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div>Copyright 同济大学艺术与传媒学院用户体验实验室 版权所有</div>
+		</footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/jquery.lazyload.js"></script>
+		<script src="js/angular.min.js"></script>	
+		<script src="js/angular-sanitize.min.js"></script>
+		<script src="js/mobile.js"></script>
+	</body>
+</html>

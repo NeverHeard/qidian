@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>首页 - 同济大学用户体验实验室</title>
+		<link rel="shortcut icon" href="img/logo.ico">
+		<link rel="stylesheet" href="styles/themes/jquery.mobile.structure-1.4.0.min.css" /> 
+		<link rel="stylesheet" href="styles/themes/jquery.mobile.icons.min.css" /> 
+		<link rel="stylesheet" href="styles/themes/mbl.css" /> 			
+		<link rel="stylesheet" type="text/css" href="styles/mobile.css"/>
+	</head>
+
+	<body>
+		<header data-role="header" data-position="fixed">
+			<a data-rel="back" class="page-back ui-btn-icon-notext"><img src="img/ic_action_previous_item.png" /></a>
+			<h1 class="header">实验室<img src="img/header_arrow.png" /><img style="display: none;"  src="img/header_arrow_down.png" /></h1>
+			<a href="#panel" class="ui-btn-right ui-btn ui-btn-inline ui-icon-bullets page-menu"><img src="img/more.png" /></a>			
+		</header>
+				
+		<div id="chooseChannel">
+	        <ul data-role="listview" data-theme="a" class="ui-listview">
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li">
+	            	<a href="#anchor1" rel="external" class="ui-link-inherit  ui-btn ui-btn-a">概况</a>
+	            </li>
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li">
+	            	<a href="#anchor2"   rel="external" class="ui-link-inherit  ui-btn ui-btn-a">科研团队</a>
+	            </li>
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li">
+	            	<a href="#anchor3" rel="external" class="ui-link-inherit  ui-btn ui-btn-a">学生</a>
+	            </li>
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li ">
+	            	<a href="#anchor4" rel="external" class="ui-link-inherit  ui-btn ui-btn-a">实验室</a>
+	            </li>
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li ">
+	            	<a href="#anchor5" rel="external" class="ui-link-inherit  ui-btn ui-btn-a">合作伙伴</a>
+	            </li>
+	            <li data-icon="false" data-corners="false" data-shadow="true" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-li ">
+	            	<a href="#anchor6" rel="external" class="ui-link-inherit  ui-btn ui-btn-a">联系方式</a>
+	            </li>
+	        </ul>
+		</div>
+		<nav data-role="panel" id="panel" data-display="overlay" data-position="right" data-position-fixed="true">
+			<ul class="listview" data-role="listview" data-icon="false">
+				<li data-role="list-divider" class="logo"><a href="center_mobile.html" rel="external", data-ajax="false"><img src="img/mlogo.png" /></a></li>
+				<li class="menu-li-select"><a href="#" rel="external", data-ajax="false">实验室</a></li>
+				<li><a href="design_mobile.html" rel="external", data-ajax="false">设计</a></li>
+				<li><a href="research_mobile.html" rel="external", data-ajax="false">研究</a></li>
+				<li><a href="education_mobile.html" rel="external", data-ajax="false">教育</a></li>
+				<li><a href="news_mobile.html" rel="external", data-ajax="false">新闻</a></li>
+				<!-- <li data-role="list-divider" class="pc_version"><a href="index.html" rel="external", data-ajax="false">电脑版</a></li> -->
+			</ul>
+		</nav>
+		
+		<div id="center_moudle" ng-app="uxlabApp" ng-controller="centerCtrl" class="container">
+			<div id="anchor1">
+				<div class="nav-title">
+					<span class="p1">01</span>
+					<span class="p2">概况</span>
+					<span class="p3">About</span>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">简介</span>
+					<span class="p6">Intro</span>
+				</div>
+				<div class="item_container1">
+					<div class="intro_pic">
+	    				<div class="center">
+							<img src="img/intro1.jpg" />
+							<img src="img/intro2.jpg" />
+							<img src="img/intro3.jpg" />
+						</div>
+						<div class="center">					
+							<img src="img/intro4.jpg" />
+							<img src="img/intro5.jpg" />
+							<img src="img/intro6.jpg" />
+						</div>
+    				</div>
+					<div class="text_container">
+						<p>用户体验实验室(简称UXLab)成立于2012年，一直专注于信息产品创新设计、交互设计、
+    		 			信息服务设计、数字娱乐软件、交互技术等研究领域。力争做一流的交互设计、搭建一流的技术创新平台。</p>
+    		 			<p><span>实验室前身为2005年成立的中山大学数字媒体研究中心</span>
+    		  			<a href="http://www.dmrc.sysu.edu.cn" class="a_style" style="text-align:center;"><spen style="color:#458aae;">(http://www.dmrc.sysu.edu.cn)</spen></a>
+    		  			<span>相关核心研究人员于2012年迁入同济大学。</span></p>
+          				<p><span>Lab Of User Experience(UXLab) was established in 2005,we focus on Product Design, Interaction Design,
+          				Service Design,Interactive Media Design and related techniques.</span></p>
+          				<span>Main research Staffs transferred from DMRC,Digital Media Research Center, Sun Yat-sen University in 2012.</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="anchor2">
+				<div class="nav-title">
+					<span class="p1">02</span>
+					<span class="p2">科研团队</span>
+					<span class="p3">Research team</span>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">工作人员</span>
+					<span class="p6">Staff</span>
+				</div>
+				<div class="person" ng-repeat="teacher in teachers">       
+					<div class="person_img">
+						<img ng-src="{{base_url + teacher.photo}}" width="180">
+					</div>
+					<div>
+						<h4>{{teacher.name}}</h4>
+						<br>
+						<p>
+							{{teacher.description}}
+						</p>
+						<br>
+						<p>主要研究方向：{{teacher.research}}</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">访问学者</span>
+					<span class="p6">Visitorial scholars</span>
+				</div>
+				<div class="person" ng-repeat="scholar in scholars">
+					<div class="person_img">
+						<img src="{{base_url + scholar.photo}}" width="180">
+					</div>
+					<div>		
+						<h4>{{scholar.name}}</h4>
+						<p><br></p>
+						<p class="scholar_description">	
+							{{scholar.description | out_label}}
+						</p>
+						<p><br></p>
+						<p>主要研究方向：{{scholar.research}}</p>			
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<div id="anchor3">
+				<div class="nav-title">
+					<span class="p1">03</span>
+					<span class="p2">学生</span>
+					<span class="p3">Student</span>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">研究生</span>
+					<span class="p6">Postgraduate</span>
+				</div>
+				<div id="post-now" class="student-box">
+					<div class="student-list" >
+						<p>在读研究生</p>
+					</div>
+					<div  id="postgraduate_now" class="student-hide" >
+		  				<div  ng-repeat="student in postgraduate_now" class="person">
+		        			<div class="person_img">
+		            			<img src="{{base_url + student.photo}}" width="180">
+		        			</div>
+		        			<div>
+		        				<p>姓名：{{student.name}}</p>
+		          				<p>专业：{{student.major}}</p>
+		          				<p>研究：{{student.research}}</p>
+		          				<p>论文：{{student.essay_name}}</p><br>
+		          			</div>
+		          			<div class="clear"></div>
+		  				</div>
+		  			</div>
+				</div>
+				
+				<div id="post-2015" class="student-box">
+					<div class="student-list">
+						<p>2015届</p>
+					</div>
+					<div  id="postgraduate_2015" class="student-hide" style="display:none">
+	  				<div  class="person" ng-repeat="student in postgraduate_2015">
+	        			<div class="person_img">
+	            			<img src="{{base_url + student.photo}}" width="180">
+	        			</div>
+	        			<div>
+	        				<p>姓名：{{student.name}}</p>
+	          				<!-- <p>学历：{{student.education}}</p>
+	          				<p>入学年份：{{student.year_enter}}</p>
+	          				<p>毕业年份：{{student.year_graduate}}</p> -->
+	          				<p>专业：{{student.major}}</p>
+	          				<p>研究：{{student.research}}</p>
+	          				<p>论文：{{student.essay_name}}</p><br>
+	          			</div>
+	          			<div class="clear"></div>
+	  				</div>
+	  				</div>
+				</div>
+				
+				<div id="post-2014" class="student-box">
+					<div class="student-list">
+						<p>2014届</p>
+					</div>
+					<div  id="postgraduate_2014" class="student-hide" style="display:none" >
+		  				<div  ng-repeat="student in postgraduate_2014" class="person"  >
+		        			<div class="person_img">
+		            			<img src="{{base_url + student.photo}}" width="180">
+		        			</div>
+		        			<div>
+		        				<p>姓名：{{student.name}}</p>
+		          				<p>专业：{{student.major}}</p>
+		          				<p>研究：{{student.research}}</p>
+		          				<p>论文：{{student.essay_name}}</p><br>
+		          			</div>
+		          			<div class="clear"></div>
+		  				</div>
+		  			</div>
+				</div>
+
+				<div id="post-2013" class="student-box">
+					<div class="student-list">
+						<p>2013届</p>
+					</div>
+					<div id="postgraduate_2013" class="student-hide" style="display:none">
+		  				<div class="person" ng-repeat="student in postgraduate_2013" >
+		        			<div class="person_img">
+		            			<img src="{{base_url + student.photo}}" width="180">
+		        			</div>
+		        			<div>
+		        				<p>姓名：{{student.name}}</p>
+		          				<p>专业：{{student.major}}</p>
+		          				<p>研究：{{student.research}}</p>
+		          				<p>论文：{{student.essay_name}}</p><br>
+		          			</div>
+		          			<div class="clear"></div>
+		  				</div>
+		  			</div>
+				</div>
+
+				<div id="post-2012" class="student-box">
+					<div class="student-list">
+						<p>2012届</p>
+					</div>
+					<div id="postgraduate_2012" class="student-hide" style="display:none">
+		  				<div class="person" ng-repeat="student in postgraduate_2012" >
+		        			<div class="person_img">
+		            			<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+		        			</div>
+		        			<div>
+		        				<p>姓名：{{student.name}}</p>
+		          				<p>专业：{{student.major}}</p>
+		          				<p>研究：{{student.research}}</p>
+		          				<p>论文：{{student.essay_name}}</p><br>
+		          			</div>
+		          			<div class="clear"></div>
+		  				</div>
+		  			</div>
+				</div>
+
+				<div id="post-2011" class="student-box">
+					<div class="student-list">
+						<p>2011届</p>
+					</div>
+					<div id="postgraduate_2011" class="student-hide" style="display:none">
+		  				<div class="person" ng-repeat="student in postgraduate_2011" >
+		        			<div class="person_img">
+		            			<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+		        			</div>
+		        			<div>
+		        				<p>姓名：{{student.name}}</p>
+		          				<p>专业：{{student.major}}</p>
+		          				<p>研究：{{student.research}}</p>
+		          				<p>论文：{{student.essay_name}}</p><br>
+		          			</div>
+		          			<div class="clear"></div>
+		  				</div>
+		  			</div>
+				</div>
+
+				<div id="post-2010" class="student-box"> 
+					<div class="student-list">
+						<p>2010届</p>
+					</div>
+					<div id="postgraduate_2010" class="student-hide" style="display:none">
+		  				<div class="person" ng-repeat="student in postgraduate_2010" >
+		        			<div class="person_img">
+		            			<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+		        			</div>
+		        			<div>
+		        				<p>姓名：{{student.name}}</p>
+		          				<p>专业：{{student.major}}</p>
+		          				<p>研究：{{student.research}}</p>
+		          				<p>论文：{{student.essay_name}}</p><br>
+		          			</div>
+		          			<div class="clear"></div>
+		  				</div>
+		  			</div>
+				</div>
+
+				<div id="post-2009" class="student-box">
+					<div class="student-list">
+						<p>2009届</p>
+					</div>
+					<div id="postgraduate_2009" class="student-hide" style="display:none">
+		  				<div class="person" ng-repeat="student in postgraduate_2009" >
+		        			<div class="person_img">
+		            			<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+		        			</div>
+		        			<div>
+		        				<p>姓名：{{student.name}}</p>
+		          				<p>专业：{{student.major}}</p>
+		          				<p>研究：{{student.research}}</p>
+		          				<p>论文：{{student.essay_name}}</p><br>
+		          			</div>
+		          			<div class="clear"></div>
+		  				</div>
+		  			</div>
+				</div>
+
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">本科生</span>
+					<span class="p6">Undergraduate</span>
+				</div>
+				<div id="under-2014" class="student-box">
+					<div class="student-list">
+						<p>2014届</p>
+					</div>
+					<div id="undergraduate_2014" class="student-hide" style="display:none">
+						<div class="person" ng-repeat="student in undergraduate_2014" >
+							<div class="person_img">
+								<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+							</div>
+							<div>
+								<p>姓名：{{student.name}} </p>
+								<p>专业：{{student.major}} </p>     
+								<p>研究：{{student.research}} </p>
+								<p>论文：{{student.essay_name}} </p><br>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="under-2013" class="student-box">
+					<div class="student-list">
+						<p>2013届</p>
+					</div>
+					<div id="undergraduate_2013" class="student-hide" style="display:none">
+						<div class="person" ng-repeat="student in undergraduate_2013" >
+							<div class="person_img">
+								<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+							</div>
+							<div>
+								<p>姓名：{{student.name}} </p>
+								<p>专业：{{student.major}} </p>     
+								<p>研究：{{student.research}} </p>
+								<p>论文：{{student.essay_name}} </p><br>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="under-2012" class="student-box">
+					<div class="student-list">
+						<p>2012届</p>
+					</div>
+					<div id="undergraduate_2012" class="student-hide" style="display:none">
+						<div class="person" ng-repeat="student in undergraduate_2012" >
+							<div class="person_img">
+								<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+							</div>
+							<div>
+								<p>姓名：{{student.name}} </p>
+								<p>专业：{{student.major}} </p>     
+								<p>研究：{{student.research}} </p>
+								<p>论文：{{student.essay_name}} </p><br>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="under-2011" class="student-box">
+					<div class="student-list">
+						<p>2011届</p>
+					</div>
+					<div id="undergraduate_2011" class="student-hide" style="display:none">
+						<div class="person" ng-repeat="student in undergraduate_2011" >
+							<div class="person_img">
+								<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+							</div>
+							<div>
+								<p>姓名：{{student.name}} </p>
+								<p>专业：{{student.major}} </p>     
+								<p>研究：{{student.research}} </p>
+								<p>论文：{{student.essay_name}} </p><br>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="under-2010" class="student-box">
+					<div class="student-list">
+						<p>2010届</p>
+					</div>
+					<div id="undergraduate_2010" class="student-hide" style="display:none">
+						<div class="person" ng-repeat="student in undergraduate_2010" >
+							<div class="person_img">
+								<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+							</div>
+							<div>
+								<p>姓名：{{student.name}} </p>
+								<p>专业：{{student.major}} </p>     
+								<p>研究：{{student.research}} </p>
+								<p>论文：{{student.essay_name}} </p><br>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="under-2009" class="student-box">
+					<div class="student-list">
+						<p>2009届</p>
+					</div>
+					<div id="undergraduate_2009" class="student-hide" style="display:none">
+						<div class="person" ng-repeat="student in undergraduate_2009" >
+							<div class="person_img">
+								<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+							</div>
+							<div>
+								<p>姓名：{{student.name}} </p>
+								<p>专业：{{student.major}} </p>     
+								<p>研究：{{student.research}} </p>
+								<p>论文：{{student.essay_name}} </p><br>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">实习生</span>
+					<span class="p6">intern</span>
+				</div>
+				<div id="intern-now" class="student-box">
+					<div class="student-list">
+						<p>2015年</p>
+					</div>
+					<div id="intern_2015" class="student-hide" style="display:none" >
+						<div class="person" ng-repeat="student in intern_2015" >
+							<div class="person_img">
+								<img src="http://fangmingdesign.net:8080{{student.photo}}" width="180">
+							</div>
+							<div>
+								<p>姓名：{{student.name}} </p>
+								<p>专业：{{student.major}} </p>
+								<p>研究：{{student.research}} </p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="anchor4">
+				<div class="nav-title">
+					<span class="p1">04</span>
+					<span class="p2">实验室</span>
+					<span class="p3">Labs</span>
+				</div>
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">信息可视化实验室</span>
+					<span class="p6">Information Visualization Lab</span>
+				</div>
+				<div class="item_container">
+					<div class="img_container center">
+						<img class="big_img" src="img/Informationlab.jpg" />
+					</div>
+					<div class="text_container">
+						<p>随着我们生活中数字化环境的发展，数字媒体设计应运而生，正在势不可挡取代传统意义的艺术设计。现代的生活已经离不开电脑、网络、手机、数字娱乐、数码家电等高科技产品，因此设计师仅仅掌握平面设计基本原理是远远不够的，
+      					还要掌握数字化的影像、声音、动画等多种媒体的应用技术和综合表现手段。数字媒体设计师正在成为世界的“创意引擎”。</p><br>   
+      					<p><strong>信息可视化实验室</strong><span>，通过整合苹果公司计算机、服务器、各类终端设备，在一个统一的计算机平台环境下，构建了一个数字媒体的设计、媒体动画/影视制作、媒体交互系统开发的统一的实验环境，为学生和科研工作人员提供媒体信息设计、制作、开发环境。整个环境系统分为以下几个部分进行规划：</span></p>
+      					<p>（1）苹果平台实验教学硬件平台</p>
+						<p>（2）数字媒体应用设计软件平台</p>
+						<p>（3）移动开发教学应用</p>
+						<p>（4）实验室网络周边设备。</p>
+					</div>
+				</div>
+
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">用户体验实验室</span>
+					<span class="p6">User Experience Lab</span>
+				</div>
+				<div class="item_container">
+					<div class="img_container center">
+						<img class="big_img" src="img/Interactivelab.jpg" />
+					</div>
+					<div class="text_container">
+						<p><strong>用户体验实验室</strong><span>主要从实验科学的角度上解决媒体交互设计中的可用性研究问题。</span></p><br>
+						<p>这类研究涉及到交互设计、人机交互、人机界面、人因工程、工效学、可用性测试、用户体验等多个研究方向。
+        				需要收集多种形式的数据，包括人机交互行为，眼部运动，生理参数、以及模拟器的数据等，并将所有的数据同步化。</p><br>
+        				<span>本实验室装备良好，初步具备专业水准的实验室。</span>
+					</div>
+				</div>
+
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">交互媒体实验室</span>
+					<span class="p6">Interactive Media Lab</span>
+				</div>
+				<div class="item_container">
+					<div class="img_container center">
+						<img class="big_img" src="img/Interactivemedialab.jpg" />
+					</div>
+					<div class="text_container">
+						<p>本实验室的建设，将于学院原有的影视制作拍摄、多媒体动画、广告设计，学科和相关的实验室互补，构成学院在交互媒体实验平台上的延伸。</p><br>
+       					<span>同时将作为学院新设立的数字媒体艺术专业的媒体创意、交互软件设计、交互媒体设计和制作等学科的发展建立一个新的技术平台，将有力推动学科的发展，与业界一流、最新的媒体设计、发布平台相衔接，为学生的职业化发展，建立训练平台。</span>
+					</div>
+				</div>
+
+				<div class="nav-subtitle">
+					<span class="p4">></span>
+					<span class="p5">数字音频实验室</span>
+					<span class="p6">Digital Audio Lab</span>
+				</div>
+				<div class="item_container">
+					<div class="img_container center">
+						<img class="big_img" src="img/audiolab.jpg" />
+					</div>
+					<div class="text_container">
+						<p><strong>数字音频实验室</strong><span>隶属于同济大学艺术与传媒学院,是媒体实验与实践中心的组成部分。</span></p><br>
+      					<p>本实验室专注于数字媒体艺术、音乐技术、声音设计、多模式和多媒体交互界面设计等领域。</p><br>
+      					<p>实验室所开设的本科以及研究生课程目标在于满足社会对掌握一定音乐、音频、音响技术知识和实践经验的毕业生的日益增长的需求。</p><br> 
+      					<p>这些课程特别专注于一定水平的创作者，那些对作曲、制作和现代音频审美方式感兴趣的人。 这根植于专业的、实践的方法和专注于多媒体，音频和现场演绎的作品。 这潮流也反映了艺术家们使用最新科技来创作音乐作品的新方式和对此方面的研究的发展。 课程融入声音艺术现代思想和理论，相关的音频硬、软件工程技术等等。</p><br>
+      					<a href="Audiolab/index.html" class="a_style" style="text-align:center;color:#458aae;">数字音频实验室 链接</a>
+					</div>
+				</div>
+			</div>				
+
+			<div id="anchor5">
+				<div class="nav-title">
+					<span class="p1">05</span>
+					<span class="p2">合作伙伴</span>
+					<span class="p3">Partners</span>
+				</div>			
+				<div class="partner">
+					<table>
+						<tbody>
+							<tr>
+								<td><img src="img/logo_03.png"></td>
+								<td><img src="img/logo_05.png"></td>
+								<td><img src="img/logo_08.png"></td>
+							</tr>
+							<tr>
+								<td><img src="img/logo_11.png"></td>
+								<td><img src="img/logo_14.png"></td>
+								<td><img src="img/logo_22.png"></td>
+							</tr>
+							<tr>
+								<td><img src="img/logo_26.png"></td>
+								<td><img src="img/logo_29.png"></td>
+								<td><img src="img/logo_34.png"></td>
+							</tr>
+							<tr>
+								<td><img src="img/logo_37.png"></td>
+								<td><img src="img/logo_41.png"></td>
+								<td><img src="img/logo_45.png"></td>
+							</tr>
+							<tr>
+								<td><img src="img/logo_49.png"></td>
+								<td><img src="img/logo_54.png"></td>
+								<td><img src="img/logo_56.png"></td>
+							</tr>
+							<tr>
+								<td><img src="img/logo_58.png"></td>
+								<td><img src="img/logo_61.png"></td>
+								<td><img src="img/logo_68.png"></td>
+							</tr>
+							<tr>
+								<td><img src="img/logo_71.png"></td>
+								<td><img src="img/logo_74.png"></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div id="anchor6">
+				<div class="nav-title">
+					<span class="p1">06</span>
+					<span class="p2">联系方式</span>
+					<span class="p3">Contact</span>
+				</div>
+				<div class="item_container">
+					<div class="contact_img">
+						<img src="img/code1.png" />
+					</div>
+					<div class="contact_text">
+						<p>由芳</p>
+						<p>同济大学艺术与传媒学院教授</p>
+						<p>youfang@tongji.edu.cn</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="item_container">
+					<div class="contact_img">
+						<img src="img/code2.png" />
+					</div>
+					<div class="contact_text">
+						<p>王建民</p>
+						<p>同济大学艺术与传媒学院教授</p>
+						<p>wangjianmin@tongji.edu.cn</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="item_container">
+					<div class="contact_img">
+						<img src="img/code3.png" />
+					</div>
+					<div class="contact_text">
+						<p>曹瀚</p>
+						<p>同济大学艺术与传媒学院助理教授</p>
+						<p>12975007@qq.com</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="item_container">
+					<div class="contact_img">
+						<img src="img/code4.png" />
+					</div>
+					<div class="contact_text">
+						<p>实验室网址：UXLab.tongji.edu.cn</p>
+						<p>地址：上海市嘉定区曹安公路<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;艺术与传媒学院121.123</p>
+						<p>电话：021-69580046</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div>Copyright 同济大学艺术与传媒学院用户体验实验室 版权所有</div>
+		</footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.mobile.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/angular.min.js"></script>	
+		<script src="js/angular-sanitize.min.js"></script>
+		<script src="js/mobile.js"></script>
+	</body>
+</html>

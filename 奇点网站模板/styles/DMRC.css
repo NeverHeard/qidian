@@ -1,0 +1,1434 @@
+body{
+	background-attachment: fixed; /* prevent screen flash in IE6 */
+	background-color: #f6f6f6;
+	font-size:14px;
+}
+*{
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑";
+}
+a{
+	text-decoration:none;
+	color:#000000;
+}
+#link a:hover{
+	background-color:#458aae;
+}
+/*#link a:link{
+	color:#FF0000;
+}
+#link a:visited{
+	color:#cccccc;
+}
+#link a:hover{
+	color:#000099;
+}
+#link a:active{
+	color:#009900;
+}*/
+
+ul,li{list-style:none;}
+
+.main {
+	background-image:url(../img/bg.png);
+	margin:0 auto;
+	width:980px;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    backGround: #FFFFFF;
+    -webkit-box-shadow: 0 -30px 30px -4px #999;
+    -moz-box-shadow: 0 -30px 30px -4px #999;
+    box-shadow: 0 -30px 30px -4px #999;
+}
+
+.anchor{
+	position:absolute;
+	top:-100px;
+}
+.hide{
+	display:none;
+}
+.txt_spread{
+	height:16px;
+	width:35px;
+	color:#458aae;
+	border: 1px solid #458aae;
+    -moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;
+	position:absolute;
+	bottom:16px;
+	right:35px;
+	line-height:16px;
+	text-align:center;
+	font-size:12px;
+	cursor:pointer;
+}
+.txt_fold{
+	height:16px;
+	width:35px;
+	color:#458aae;
+	border: 1px solid #458aae;
+    -moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;
+	position:absolute;
+	bottom:16px;
+	right:35px;
+	line-height:16px;
+	text-align:center;
+	font-size:12px;
+	cursor:pointer;
+}
+
+.spread{
+	position:absolute;
+	bottom:16px;
+	right:13px;
+	width:18px;
+	height:18px;
+	cursor:pointer;
+	overflow:hidden;
+	z-index:2;
+}
+
+.achieve_s_fold{
+	display:none;
+}
+#header{
+	width: 960px; 
+	text-align: left; 
+	height: 97px; 
+	margin: 0px auto; 
+	z-index:100; 
+	_position: relative ; 
+	_top:0px;
+	background-color:#ffffff; 
+}
+
+/*顶部固定div*/
+#float{
+	width: 960px; 
+	float: left; 
+	display: block; 
+	z-index: 100; 
+	overflow: visible; 
+	position: fixed; 
+	top: 0px; /* position fixed for IE6 */ 
+	_position: absolute;
+	_top: expression(documentElement.scrollTop + "px"); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	height: 100px; 
+	background-color:#ffffff;
+	border-bottom:20px solid #ffffff;
+}
+
+#inner{
+	margin:0 auto;
+	height:97px;
+	width:960px;
+	border-bottom:3px solid #999999;
+}
+#logo{
+	position:relative;
+	top:30px;
+	left:24px;
+}
+.navigation_div {
+    position: relative;
+    height: 97px;
+    width: 500px;
+    top: -50px;
+    left: 495px;
+    font-size: 13px;
+    /* line-height: 113px; */
+    /* background-color: #ccc; */
+}
+.menu{
+	position:absolute;
+	top:44px;	
+}
+.menu li{
+	float:left;
+	/* position:relative; */
+	height:26px;
+	/* width:95px; */
+}
+.menu li:hover a{
+	color:#458aae;
+}
+.menu>li>a,.menu>li>a:visited{
+	display:block;
+	text-decoration: none;
+	/* width:105px; */
+	height:30px;
+	font-size:15px;
+	line-height: 30px;
+	text-align:center;
+	padding: 0 30px;
+}
+.menu_active {
+	color:#458aae;
+}
+.menu li:hover .a_style{
+	color:#458aae;
+	text-align:center;
+}
+.menu li ul{
+	display:none;
+}
+.menu li ul li{
+	float:right;
+}
+
+.menu li:hover ul{
+	display:block;
+	position:absolute;
+	right:0;
+	margin:0;
+	width: 600px;
+}
+
+.menu li:hover ul li a{
+	display:block;
+	background-color: #ffffff;
+	color:#000;
+	/* width:105px; */
+	border-top:0px;
+    text-align: center;
+    line-height: 26px;
+    padding: 0 15px;
+}
+.menu li:hover ul li a:hover {
+	color:#458aae;
+}
+
+.module {
+    position:relative;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.module-content {
+	margin: 0 auto;
+    width: 960px;
+    min-height: 80px;
+    background-color: #f7f7f7;
+}
+/*中心介绍布局*/
+#center_introduction{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+	height:365px;
+	margin-top:23px;
+}
+.title{
+	position:absolute;
+	height:80px;
+	width:960px;
+    top: 0;
+}
+.p1{
+	position:absolute;font-size:50px;font-weight:bold;font-family:Arial Black;width:70px;height:80px;line-height:80px;color:#5c5c5c;left:10px;
+}
+.p2{
+	position:absolute;left:80px;top:20px;color:#458aae;font-size:20px;font-weight:bold;
+}
+.p3{
+	position:absolute;left:80px;top:43px;color:#5c5c5c;font-size:16px;font-weight:bold;
+}
+/*.title{
+	position:absolute;
+	width:84px;
+	height:20px;
+	line-height:20px;
+	background-color:#4589ae;
+	color:#ffffff;
+	text-align:center;
+}*/
+.vice_title{
+	position:absolute;
+	width:84px;
+	height:20px;
+	line-height:20px;
+	background-color:#4589ae;
+	color:#ffffff;
+	text-align:center;
+	left:85px;
+}
+#detail1{
+	position:absolute;
+	top:80px;
+	width:960px;
+	height:285px;
+}
+
+#teacher_detail{
+	position:absolute;
+	top:80px;
+	width:960px;
+	height:285px;
+}
+
+
+.intro_pic{
+	position:absolute;
+	left:10px;
+	height:285px;
+	width:430px;
+}
+#intro1{
+	position:absolute;height:140px;width:140px;
+}
+
+#intro2{
+	position:absolute;height:140px;width:140px;left:145px;
+}
+
+#intro3{
+	position:absolute;height:140px;width:140px;left:290px;
+}
+
+#intro4{
+	position:absolute;height:140px;width:140px;top:145px;
+}
+
+#intro5{
+	position:absolute;height:140px;width:140px;top:145px;left:145px;
+}
+
+#intro6{
+	position:absolute;height:140px;width:140px;top:145px;left:290px;
+}
+
+.intro_text{
+	position:absolute;
+	display:table;
+	left:445px;
+	height:285px;
+	width:515px;
+	text-align:left;
+	font-size:15px;
+	background-color:#f7f7f7;
+}
+.intro_text div{
+	width:475px;
+	padding:0 50px;
+	vertical-align:middle;
+	display:table-cell;
+	text-align:left;
+}
+.area {
+	position:relative;
+	width:960px;
+	margin:0 auto;
+}
+/* 教育模块 */
+#method {
+    margin-top: 2px;
+}
+#resource .img-arrow {
+	position:absolute;
+	top:31px;
+	left:230px;
+}
+#resource .subtitle{
+	left:250px;
+}
+/*队伍建设-工作人员 布局*/
+#staff{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+}
+
+#detail2{
+	position:absolute;
+	height:365px;
+	width:960px;
+	top:80px;
+}
+.staff_fold{
+	display:none;
+}
+
+.teacher{
+	float:left;
+	position:relative;
+	margin-top:1px;
+	margin-left:1px;
+	height:410px;
+	width:239px;
+	background:#f7f7f7;
+}
+.staff1{
+	position:absolute;
+	height:365px;
+	width:239px;
+	background:#f7f7f7;
+}
+.staff2{
+	position:absolute;
+	height:365px;
+	width:239px;
+	background:#f7f7f7;
+	left:240px;
+}
+.staff3{
+	position:absolute;
+	height:365px;
+	width:239px;
+	background:#f7f7f7;
+	left:480px;
+}
+.staff4{
+	position:absolute;
+	height:365px;
+	width:239px;
+	background:#f7f7f7;
+	left:720px;
+}
+.staff5{
+	position:absolute;
+	height:365px;
+	width:239px;
+	background:#f7f7f7;
+	top:366px;
+}
+.staff6{
+	position:absolute;
+	height:365px;
+	width:239px;
+	background:#f7f7f7;
+	left:240px;
+	top:366px;
+}
+.staff7{
+	position:absolute;
+	height:365px;
+	width:239px;
+	background:#f7f7f7;
+	left:480px;
+	top:366px;
+}
+
+.photo{
+	position:absolute;
+	left:22px;
+	top:15px;
+}
+
+.photo1{
+	padding:22px;
+	left:22px;
+	top:15px;
+}
+
+.teacher_name{
+	color:#458aae;
+	position:absolute;
+	top:108px;
+	padding-left:125px;
+}
+
+.scholar_name{
+	color:#458aae;
+	position:absolute;
+	top:85px;
+	padding-left:125px;
+}
+
+.name{
+	color:#458aae;
+	position:absolute;
+	top:115px;
+	left:125px;
+}
+.person_intro{
+	position:absolute;
+	top:144px;
+	width:195px;
+	height:100px;
+	padding:0 22px;
+}
+
+/*队伍建设-访问学者 布局*/
+#scholars{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+}
+
+#detail3{
+	position:absolute;
+	top:80px;
+	height:731px;
+	width:960px;
+	float:left;
+}
+.hans{
+	color:#458aae;
+	position:absolute;
+	top:100px;
+	left:125px;
+}
+
+/*合作伙伴*/
+#partner{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+}
+.mate{
+	position:absolute;
+	top:80px;
+	height:100px;
+	width:239px;
+	display:table;
+	vertical-align:middle;
+	background:#f7f7f7;
+}
+.mate div{
+		display:table-cell;
+		text-align:center;
+		vertical-align:middle;
+		height:100px;
+		width:239px;
+}
+/*.partner2{
+	position:absolute;
+	height:100px;
+	width:239px;
+	left:240px;
+	display:table;
+	vertical-align:middle;
+	background:#f7f7f7;	
+}
+.partner3{
+	position:absolute;
+	height:100px;
+	width:239px;
+	left:480px;
+	display:table;
+	vertical-align:middle;
+	background:#f7f7f7;	
+}
+.partner4{
+	position:absolute;
+	height:100px;
+	width:239px;
+	left:720px;
+	display:table;
+	vertical-align:middle;
+	background:#f7f7f7;	
+}
+.partner5{
+	position:absolute;
+	height:100px;
+	width:239px;
+	top:181px;
+	display:table;
+	vertical-align:middle;
+	background:#f7f7f7;
+}*/
+
+
+/*网络资源*/
+#resource{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+	height: auto;
+}
+.re{
+	/* position:absolute; */
+	float: left;
+	top:80px;
+	height:78px;
+	width:238px;
+	margin-left:1px;
+	margin-top:1px; 
+	display:table;
+	vertical-align:middle;
+	background:#f7f7f7;
+}
+.re div{
+		display:table-cell;
+		text-align:center;
+		vertical-align:middle;
+		height:80px;
+		width:239px;
+}
+/*友情链接*/
+#link{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+}
+
+.link{
+	position:relative;
+	float:left;
+	height:79px;
+	width:239px;
+	margin-top: 1px;
+	margin-left: 1px;
+	display:table;
+	vertical-align:middle;
+	background:#f7f7f7;
+	color:#000000;
+}
+.link div{
+		display:table-cell;
+		text-align:center;
+		vertical-align:middle;
+		height:80px;
+		width:239px;
+}
+
+
+/*理论成果*/
+.achieve{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+}
+.achieve_title{
+	position:relative;
+	height:80px;
+}
+
+.detail4{
+	position:relative;
+	margin:0 auto;
+	width:850px;
+	padding:50px 55px;
+	margin-top:1px;
+	background-color:#f7f7f7;
+}
+.project{
+	position:relative;
+	margin:0 auto;
+	width:850px;
+	padding:50px 55px;
+	margin-top:1px;
+	background-color:#f7f7f7;
+}
+
+/*研究方向*/
+.research_area{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+	height:490px;
+}
+
+#detail5{
+	position:absolute;
+	height:410px;
+	width:960px;
+	top:80px;
+	background-color:#f7f7f7;
+}
+.area_pic{
+	height:410px;width:410px;position:absolute;
+}
+.area_des{
+	position:absolute;
+	display:table;
+	left:445px;
+	height:410px;
+	width:515px;
+	text-align:left;
+	font-size:15px;
+}
+.area_des div{
+	width:475px;
+	padding:0 50px;
+	vertical-align:middle;
+	display:table-cell;
+	text-align:left;
+}
+
+
+/*成果展示*/
+#innovation{
+	position:relative;
+	margin:0 auto;
+	width:960px;
+	margin-top:23px;
+}
+
+.project_name{
+	color:#458aae;
+	font-size:17px;
+	padding-bottom: 5px;
+}
+
+.project_name_en{
+	padding-bottom: 5px;
+}
+
+.detail6{
+	position:absolute;
+	height:400px;
+	width:960px;
+	background:#f7f7f7;
+	top:80px;
+}
+.img{
+	position:absolute;
+	width:480px;
+	height:400px;
+	display:table;
+	vertical-align:middle;
+}
+.img img {
+	max-width: 400px;
+}
+
+.img div{
+	width:480px;
+	height:400px;
+	text-align:center;
+	vertical-align:middle;
+	display:table-cell;
+}
+
+.description{
+	position:absolute;
+	left:480px;
+	width:450px;
+	padding-right:30px;
+	height:430px;
+	display:table;
+	vertical-align:middle;
+}
+
+.description div{
+	width:450px;
+	/*height:400px;*/
+	text-align:left;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.detail7{
+	position:relative;
+	height:400px;
+	width:960px;
+	background-color:#f7f7f7;
+	margin:0 auto;
+	margin-top:10px;
+	display:none;
+}
+/*服务设计*/
+#service{
+	position:relative;
+	margin:0 auto;
+	width:960px;
+	/*margin-bottom: 80px;*/
+	/*height:2130px;*/
+}
+
+
+.detail8{
+	position:absolute;
+	height:400px;
+	width:960px;
+	background:#f7f7f7;
+	top:80px;
+}
+.detail9{
+	position:relative;
+	height:400px;
+	width:960px;
+	background-color:#f7f7f7;
+	margin:0 auto;
+	margin-top:10px;
+	display:none;
+}
+/*交互设计*/
+#interaction{
+	position:relative;
+	margin:0 auto;
+	width:960px;
+	/*height:5430px;*/
+}
+.detail10{
+	position:absolute;
+	height:400px;
+	width:960px;
+	background:#f7f7f7;
+	top:80px;
+}
+.detail11{
+	position:relative;
+	height:400px;
+	width:960px;
+	background-color:#f7f7f7;
+	margin:0 auto;
+	margin-top:10px;
+	display:none;
+}
+
+
+
+/*交互媒体设计*/
+#media{
+	position:relative;
+	margin:0 auto;
+	width:960px;
+	height:480px;
+}
+.detail12{
+	position:absolute;
+	height:400px;
+	width:960px;
+	background:#f7f7f7;
+	top:80px;
+}
+.detail13{
+	position:relative;
+	height:400px;
+	width:960px;
+	background-color:#f7f7f7;
+	margin:0 auto;
+	margin-top:10px;
+	display:none;
+}
+
+.detail14{
+	position:relative;
+	margin:0 auto;
+	width:900px;
+	padding:50px 30px;
+	margin-top:1px;
+	background-color:#f7f7f7;
+}
+/*重要会议*/
+#meeting{
+	position:relative;
+	margin:0 auto;
+	width:960px;
+	height:330px;
+	margin-top:23px;
+}
+
+.detail15{
+	/*  position:absolute;  */
+	height:250px;
+	width:960px;
+	background:#f7f7f7;
+	top:80px;
+}
+.img1{
+	position:absolute;
+	width:250px;
+	height:250px;
+	display:table;
+	vertical-align:middle;
+}
+
+.img1 div{
+	width:250px;
+	height:250px;
+	text-align:center;
+	vertical-align:middle;
+	display:table-cell;
+}
+
+.description1{
+	position:relative;
+	top:70px;
+	left:250px;
+	margin-top:5px;
+	width:650px;
+	height:245px;
+	display:table;
+	vertical-align:middle;
+}
+
+.description1 div{
+	width:710px;
+	height:250px;
+	text-align:left;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.detail16{
+	position:relative;
+	height:250px;
+	width:960px;
+	background-color:#f7f7f7;
+	margin:0 auto;
+	margin-top:10px;
+	display:none;
+}
+/*相关书籍*/
+#book_table tr td{
+	padding:0 10px;
+	border:1px solid #999999;
+}
+
+
+/*实验室*/
+#about{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+	margin-top:23px;
+	height:479px;
+}
+.lab_pic{
+	position:absolute;
+	display:table;
+	height:458px;
+	width:480px;
+}
+.lab_pic div{
+	vertical-align:middle;
+	display:table-cell;
+	text-align:center;
+}
+#director{
+	position:relative;
+	width:960px;
+	margin:0 auto;
+	height:481px;
+}
+.detail17{
+	position:absolute;
+	height:200px;
+	width:960px;
+	background: #f7f7f7;	
+}
+.detail18{
+top:201px;
+}
+
+.detail23{
+	position:absolute;
+	height:401px;
+	width:960px;
+	top:80px;
+}
+
+.director_pic{
+	position:absolute;
+	left:35px;
+	top:25px;
+}
+.resume{
+	position:absolute;
+	left:247px;
+	height:200px;
+	width:700px;
+	display:table;
+}
+.resume div{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:left;
+}
+.act_pic{
+	position:relative;
+	width:850px;
+	text-align:center;
+}
+
+/*联系方式*/
+#contact{
+	position:relative;
+	width:960px;
+	margin:0 auto;
+	height:481px;
+	overflow:hidden;
+	margin-top:23px;
+}
+.detail19{
+	position:absolute;
+	height:200px;
+	width:480px;
+	top:80px;
+	background: #f7f7f7;	
+}
+.detail20{
+	left:481px;
+}
+.detail21{
+	top:281px;
+}
+.detail22{
+	top:281px;
+	left:481px;
+}
+
+.code_intro{
+	position:absolute;
+	left:225px;
+	height:200px;
+	width:230px;
+	display:table;
+}
+.code_intro div{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:left;
+}
+
+.copr{
+	position:relative;
+	height:50px;
+	width:960px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:30px;
+	display:table;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+}
+
+.copr div{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	font-size:12px;
+}
+/*
+ * phone version
+ */
+.phone_version{
+	display:block;
+	position:absolute;
+	height:25px;
+	right:14px;
+	top:5px;
+	padding-right:22px;
+	padding-top:5px;
+	background:url("../img/ic_action_phone.png") no-repeat;
+	background-position:145px;
+	z-index:9999;
+	cursor: pointer;
+}
+#header{
+	position: relative;
+}
+.sub-title {
+    line-height: 30px;
+}
+.content-wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.content-wrapper .posts {
+    height: 160px;
+    padding-top: 48px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6eaed;
+}
+.content-wrapper .posts .left-col {
+    position: relative;
+}
+.left {
+    float: left;
+}
+.content-wrapper .posts .left-col .feature-img {
+    /*width: 60px;
+    height: 60px;*/
+}
+.content-wrapper .posts .right-col {
+    margin-left: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.content-wrapper .posts h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.content-wrapper p {
+    font-family: "Microsoft YaHei",微软雅黑,STHei,华文黑体, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #38485a;
+    position: relative;
+}
+.lazyload.loaded {
+	width: 180px;
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+}
+img, video, object, embed, iframe {
+    max-width: 100%;
+}
+fieldset, img {
+    border: 0;
+}
+#content-title {
+    margin: 50px auto 0 auto;
+}
+.content-title-news {
+    color: #3f51b5;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.courses-img {
+    margin: 35px auto 24px auto;
+    /* width: 226px; */
+    /* height: 61px; */
+    text-align: center;
+}
+
+#res a:hover{
+	background-color: #458aae;
+}
+
+#linked a:hover{
+	background-color: #458aae;
+}
+
+
+/* 后期新增样式*/
+.innovation_detail{
+	position:relative;
+	margin-top: 10px;
+	height:430px;
+	width:960px;
+	top: 80px;
+	background:#f7f7f7;
+}
+
+.service_detail{
+	position:relative;
+	float: left;
+	margin-top:10px;
+	height:430px;
+	width:960px;
+	background:#f7f7f7;
+	top:80px;
+}
+
+.ui_detail{
+	position:relative;
+	float:left;
+	margin-top:10px;
+	height:430px;
+	width:960px;
+	background:#f7f7f7;
+	top:80px;
+}
+#inn_height > div:first-child,
+#ser_height > div:first-child,
+#ui_height > div:first-child {
+	margin-top: 0;
+}
+
+.country_project{
+	position: relative;
+	margin: 0 auto;
+	width: 850px;
+	padding: 6px 55px;
+	margin-top: 1px;
+	background-color:
+}
+
+.patent_project{
+	position: relative;
+	margin: 0 auto;
+	width: 850px;
+	padding: 6px 55px;
+	margin-top: 1px;
+	background-color:
+
+}
+
+.software_project{
+	position: relative;
+	margin: 0 auto;
+	width: 850px;
+	padding: 6px 55px;
+	margin-top: 1px;
+	background-color:
+
+}
+.prize_project{
+	position: relative;
+	margin: 0 auto;
+	width: 850px;
+	padding: 6px 55px;
+	margin-top: 1px;
+	background-color:
+}
+
+#link .module-content{
+    position: relative;
+}
+
+.book_table{
+  	border:1px solid #999999;
+}
+
+.book_td1{
+	background-color: #458aae;
+	color: #ffffff;
+	text-align: center;
+	height:30px;
+}
+
+.book_td2{
+	background-color: #458aae;
+	color: #ffffff;
+	text-align: center;
+}
+
+.module1 {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 80px;
+    height: 320px;
+}
+
+.teacher_blank{
+	position: absolute;
+	height: 365px;
+	width: 239px;
+	margin-left: 1px;
+	left: 720px;
+	background: #f7f7f7;
+}
+
+.teacher_img{
+	position:absolute;
+	top: 31px;
+	left: 205px;
+}
+
+#detail3_1{
+	position: relative;
+	top: 80px;
+	top: 80px;
+	height: 731px;
+	width: 960px;
+	float: left;
+}
+	
+.In_img{
+	position: absolute;
+	height: 209px;
+	width: 339px;
+	top: 100px;
+	left: 70px;
+}
+
+.area_img{
+	position: absolute;
+	top: 31px;
+	left: 155px;
+}
+
+.area1 {
+	position:relative;
+	width:960px;
+	margin:0 auto;
+	margin-top: 23px;
+}
+
+.re_img{
+	position: absolute;
+	top: 31px;
+	left: 155px;
+}
+
+.arr_img{
+	position: absolute;
+	top: 31px;
+	left: 205px;
+}
+
+.scho_img{
+	position: relative;
+	top: 80px;
+}
+
+.p2_1{
+	position:absolute;
+	left:190px;
+	top:20px;
+	color:#458aae;
+	font-size:20px;
+	font-weight:bold;
+}
+.p3_1{
+	position:absolute;
+	left:190px;
+	top:43px;
+	color:#5c5c5c;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.p2_2{
+	position:absolute;
+	left:228px;
+	top:20px;
+	color:#458aae;
+	font-size:20px;
+	font-weight:bold;
+}
+.p3_2{
+	position:absolute;
+	left: 228px;
+	top:43px;
+	color:#5c5c5c;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.sp1_color{
+	color: #458aae;
+}
+
+.sp2_color{
+	color: #000;
+}
+
+#Audiolab_style{
+	text-align: center;
+	color: #458aae;
+}
+
+#intro_position{
+	text-align: center;	
+}
+
+.p_font{
+	font-size: 13px;
+}
+
+#inno_height{
+	height: 40px;
+}
+
+.design_body{
+	text-align: left; 
+	width: 450px; 
+	max-height: 250px;
+}
+
+.tr1{
+	text-align: left; 
+	width: 430px; 
+	height: 30px;
+}
+
+.inno_td{
+    width: 220px;
+    float: left;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+.inno_p{
+	font: 13px;
+}
+
+.gaodu{
+	height: 2940px;
+}
+
+.project_mar{
+	margin-top: 23px;
+}
+
+.research_hangju{
+	line-height: 120%;
+}
+
+.hanggao{
+	line-height:150%;
+}
+
+.book_line{
+	line-height: 128%;
+}
+
+#p_img{
+	margin-bottom: 4px; 
+	margin-top: 4px;
+}
+
+.team_img{
+	width: 90px;
+}
+
+#post-2015{
+	margin:0 auto;
+	position: relative;
+	width: 960px;
+}
+
+.cover-img {
+	text-align: center;
+}
+
+.design_content_title{
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.design_abstract{
+	line-height: 17px;
+}
+
+.design_content{
+	height: 16px;
+	line-height: 16px;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
